@@ -1,0 +1,60 @@
+<!--
+  Generated template for the ScorePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>score</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<br>
+<br>
+<br>
+
+<ion-content padding  *ngFor="let i of awe">
+  <div class="rb">
+ 
+    <div class="pic" (click)="check('A')">  
+      <h2>Home</h2>
+      <ion-list>
+          <ion-item class="bee">
+              <ion-label ><p class="pie">{{i.a}}</p></ion-label>
+              <br>
+              <br>
+              <ion-label  id="Home"><p class="pie">{{home}}</p></ion-label>
+            </ion-item>
+      </ion-list>
+      </div>
+
+
+      <div class="bic"  (click)="check('B')">  
+        <h2>Away</h2>
+        <ion-list   >
+            <ion-item class="aya">
+                <ion-label ><p class="pie">{{i.b}}</p></ion-label>   
+                <br>
+                <br>             
+                <ion-label  id="Away"><p class="pie">{{away}}</p></ion-label>             
+              </ion-item>
+        </ion-list> 
+        </div>
+
+        <br>
+        <br>
+        <button ion-button round color="dark" (click)="try()">Try</button>
+        <button ion-button outline  round (click)="undotry()" class="btn"><ion-icon name="undo">&#160;UNDO</ion-icon></button><br>
+        <button ion-button  round color="pop" (click)="pen()">Penalty</button>
+        <button ion-button outline round (click)="undopen()" class="btn"><ion-icon name="undo">&#160;UNDO</ion-icon></button><br>
+        <button ion-button  round color="pup" (click)="conve()">Conversion</button>
+        <button ion-button outline round (click)="undoconve()" class="btn"><ion-icon name="undo">&#160;UNDO</ion-icon></button><br>
+        <button ion-button  round color="darky" (click)="remove()"><ion-icon name="refresh"></ion-icon></button>
+         <button ion-button  round color="darky" (click)="EndMatchPage()">End Match</button>
+        
+
+      </div>
+</ion-content>

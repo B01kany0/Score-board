@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <img src="../../assets/imgs/R1.jpg" style="width: 500px;" class="rad">
+  <div>
+  
+<h2>Home</h2>
+<ion-list>
+    <ion-item>
+        <ion-label stacked></ion-label>
+        <ion-input type="text" [(ngModel)]="home" ></ion-input>
+      </ion-item>
+</ion-list>
+<h1>VS</h1>
+<hr>
+</div>
+
+<div>
+    
+  <h2>Away</h2>
+  <ion-list>
+      <ion-item>
+          <ion-label stacked></ion-label>
+          <ion-input type="text" [(ngModel)]="away"></ion-input>
+        </ion-item>
+  </ion-list>
+  
+  <button ion-button full round (click)="scorePage()">Start</button>
+  </div>
+  
+</ion-content>
